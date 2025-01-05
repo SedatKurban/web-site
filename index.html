@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sedat Kurban</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/svg+xml" href="src/logooo.png" />
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+/>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="src/logooo.png" class="logo" />
+
+          <ul id="sideMenu">
+            <li><a href="#header">Ana Sayfa</a></li>
+            <li><a href="#about">Hakkımda</a></li>
+            <li><a href="#services">Hizmetler</a></li>
+            <li><a href="#contact">İletişim</a></li>
+            <i class="fas fa-times" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>SOFTWARE DEVELOPER</p>
+          <h1>Merhaba, Ben <span>Sedat</span></h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="src/beyaz-arkaplan.jpeg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">Hakkımda</h1>
+            <p>
+              Merhaba! Ben Sedat, 19 Ocak 2003 tarihinde İstanbul'da doğdum.
+              Eğitim hayatıma İstanbul'da başladım ve lise yıllarımda
+              programlama ile tanışarak yazılım dünyasına adım attım. HTML ve
+              CSS kullanarak ilk web sitelerimi tasarladım ve geliştirdim.
+              Üniversite eğitimime Kocaeli'de başladım ve burada iki yıl eğitim
+              aldıktan sonra Sinop Üniversitesi'nde öğrenimime devam etmeye
+              karar verdim. Şu anda aktif olarak hem eğitimime odaklanıyor hem
+              de freelancer olarak web siteleri ve mobil uygulamalar
+              geliştiriyorum. Yazılım dünyasına olan tutkum, sürekli öğrenme ve
+              kendimi geliştirme isteğiyle birleşiyor. Her yeni projede,
+              yenilikçi çözümler sunmayı ve kaliteli işler ortaya koymayı
+              hedefliyorum.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('skills')">
+                Yetkinlikler
+              </p>
+              <p class="tab-links" onclick="openTab('experience')">
+                Geçmiş Projeler
+              </p>
+              <p class="tab-links" onclick="openTab('education')">Eğitim</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span> <br />Web/Mobil Uygulama Tasarımı</li>
+                <li>
+                  <span>Web Geliştirme</span> <br />Javascript kullanarak web
+                  sitesi geliştirme
+                </li>
+                <li>
+                  <span>Mobil Geliştirme</span> <br />Flutter kullanarak mobil
+                  arayüz tasarımı
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Sınav Temel Lisesi</span> <br />Eşit Ağırlık Bölümü
+                </li>
+                <li>
+                  <span>Sinop Üniversitesi</span> <br />İnternet ve Ağ
+                  Teknolojileri
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">Hizmetler</h1>
+        <div class="services-list">
+          <div>
+            <h2>UI/UX Tasarım</h2>
+            <p>
+              Modern, estetik ve kullanıcı dostu web siteleri tasarlıyorum!
+              HTML, CSS ve Bootstrap teknolojilerini kullanarak ihtiyaçlarınıza
+              uygun, hızlı ve mobil uyumlu (responsive) web siteleri
+              oluşturuyorum.<br /><br />
+              Hedefiniz ister bireysel bir portföy, ister kurumsal bir web
+              sitesi olsun, her projede yenilikçi tasarımlar ve etkili kullanıcı
+              deneyimi sunmayı amaçlıyorum. Web sitenizin sadece güzel
+              görünmesini değil, aynı zamanda performans ve erişilebilirlik
+              açısından da en iyi seviyede olmasını sağlıyorum.<br /><br />
+              Birlikte çalışarak, dijital dünyada fark yaratacak bir web sitesi
+              tasarlamaya ne dersiniz?
+            </p>
+          </div>
+          <div>
+            <h2>Web Programlama</h2>
+            <p>
+              JavaScript sayesinde web sitenize dinamik özellikler ekliyor,
+              kullanıcı deneyimini daha interaktif hale getiriyorum. İster form
+              doğrulama, animasyonlar, ister veri işleme gibi özellikler olsun,
+              JavaScript ile sitenizin işlevselliğini artırıyorum.<br /><br />
+
+              Web sitenizin sadece görsel açıdan değil, aynı zamanda kullanıcı
+              etkileşimi ve fonksiyonellik açısından da mükemmel olmasını
+              sağlıyorum. Siz de web projelerinizde güçlü, kullanıcı dostu ve
+              dinamik çözümler arıyorsanız, doğru yerdesiniz!
+            </p>
+          </div>
+          <div>
+            <h2>Mobil Programlama</h2>
+            <p>
+              Flutter'ın esnek yapısını kullanarak, mobil uygulamalarınıza özgün
+              tasarımlar ve zengin işlevsellikler ekliyorum. Kullanıcı
+              deneyimini en üst seviyeye çıkarmak için uygulamanızın tüm
+              detaylarına özen gösteriyor ve her ekranın uyumlu çalışmasını
+              sağlıyorum.
+              <br />
+              <br />
+              Mobil dünyada güçlü bir varlık yaratmak için Flutter ile en
+              verimli çözümleri sunmaya hazırım. Uygulamanızın hem görsel hem de
+              fonksiyonel açıdan mükemmel olmasını sağlamak için sizinle
+              çalışmayı dört gözle bekliyorum!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">İletişim</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i> sedatkurbann@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i> (+90) 545 808 53 33</p>
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/in/sedat-kurban-9b5103345/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/SedatKurban" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form id="contact-form">
+              <input
+                id="username"
+                type="text"
+                name="Name"
+                placeholder="İsim"
+                required
+              />
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Mail Adresi"
+                required
+              />
+              <textarea
+                id="message"
+                name="Message"
+                rows="6"
+                placeholder="Mesaj"
+              ></textarea>
+              <button type="submit" class="btn">Gönder</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Sedat Kurban</p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
